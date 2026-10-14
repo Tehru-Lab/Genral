@@ -50,7 +50,7 @@ calc.addEventListener("click", () => {
   }
 
   let check = value1 / Math.pow(value2, 2);
-  check = Math.round(BMIValue);
+  check = Math.round(check);
 
   BMI.textContent = `Your BMI is : ${check}`;
 
