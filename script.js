@@ -40,13 +40,13 @@ match.addEventListener("click", () => {
 // 6. Optional: clear inputs after matching
 
 calc.addEventListener("click", () => {
-  let value1 = height.value.trim();
-  let value2 = weight.value.trim();
+  let value1 = weight.value.trim();
+  let value2 = height.value.trim();
 
   if (value1 === "") 
-    BMI.textContent = "Please enter your Height";
+    BMI.textContent = "Please enter your Weight";
   else if (value2 === "") {
-    BMI.textContent = " Please enter your Weight";
+    BMI.textContent = " Please enter your Height";
   }
 
   let check = value1 / Math.pow(value2, 2);
