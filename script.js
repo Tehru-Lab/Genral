@@ -31,6 +31,7 @@ match.addEventListener("click", () => {
   me.value = "";
   you.value = "";
 });
+
 // 1. Listen for the button click
 // 2. Read values from the inputs
 // 3. Validation - both must be filled
@@ -42,15 +43,16 @@ calc.addEventListener("click", () => {
   let value1 = height.value.trim();
   let value2 = weight.value.trim();
 
-  if (value1 === "") BMI.textContent = "Please enter your Height";
+  if (value1 === "") 
+    BMI.textContent = "Please enter your Height";
   else if (value2 === "") {
     BMI.textContent = " Please enter your Weight";
   }
 
-  let BMIValue = value1 / Math.pow(value2, 2);
-  BMIValue = Math.round(BMIValue);
+  let check = value1 / Math.pow(value2, 2);
+  check = Math.round(BMIValue);
 
-  BMI.textContent = `Your BMI is : ${BMIValue}`;
+  BMI.textContent = `Your BMI is : ${check}`;
 
   value1.value = "";
   value2.value = "";
